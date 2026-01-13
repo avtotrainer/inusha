@@ -1,0 +1,27 @@
+/* =========================================================
+   typography.css
+   ტექსტი, ბმულები, ფონტების გამოყენება
+   ========================================================= */
+
+body {
+  font-family:
+    "Noto Sans Georgian",
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Ubuntu,
+    Cantarell,
+    Arial;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

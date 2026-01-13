@@ -1,0 +1,17 @@
+/* =========================================================
+   navigation.css
+   ნავიგაციის საერთო ჩონჩხი
+   ========================================================= */
+
+.site-nav {
+  background: var(--surface-soft);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+}

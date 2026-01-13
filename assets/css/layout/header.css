@@ -1,0 +1,19 @@
+/* =========================================================
+   header.css
+   საიტის ზედა ნაწილი (header)
+   ========================================================= */
+
+.site-header {
+  background: linear-gradient(
+    180deg,
+    rgba(234, 242, 248, 0.95),
+    rgba(234, 242, 248, 0.75)
+  );
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding: var(--space-4) 0;
+}

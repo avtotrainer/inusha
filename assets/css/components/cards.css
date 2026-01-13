@@ -1,0 +1,28 @@
+/* =========================================================
+   cards.css
+   ბარათები
+   ========================================================= */
+
+.cards {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  box-shadow: var(--shadow);
+}
+
+.card-title {
+  font-family: "Noto Serif Georgian", Georgia, "Times New Roman", serif;
+  margin: 0 0 var(--space-2);
+  font-size: var(--fs-3);
+}
+
+.card-text {
+  margin: 0;
+  color: var(--muted);
+}

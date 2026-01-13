@@ -16,7 +16,11 @@
     <title>ᲛᲗᲐᲕᲐᲠᲘ</title>
     <meta name="description" content="მრავალენოვანი Jekyll შაბლონის მთავარი გვერდი.">
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Favicon (optional but recommended) -->
+    <link rel="icon" href="/favicon.ico">
   </head>
 
   <body>
@@ -44,7 +48,7 @@
 
     
 
-<ul class="menu" role="list">
+<ul class="menu" id="mobile-menu" role="list">
   
     <li class="menu-item">
       <a
@@ -85,48 +89,67 @@
 </ul>
 
 
-    <div class="lang-switch" aria-label="ენის გადამრთველი">
-  
 
-  
-    
-    
-    
-
-    
-
-    
-
-    <a
-      class="lang-flag"
-      href="/"
-      hreflang="en"
+    <!-- სენდვიჩ მენიუს ღილაკი (მხოლოდ mobile-ზე ჩანს CSS-ით) -->
+    <button
+      class="hamburger"
+      type="button"
+      aria-label=""
+      aria-expanded="false"
+      aria-controls="mobile-menu"
     >
-      🇺🇸
-    </a>
-  
-    
-    
-    
+      ☰
+    </button>
 
-    
+    <div class="lang-switch" aria-label="Language selector">
 
-    
+  <!-- აქტიური ენა (mobile toggle) -->
+  <button
+    class="lang-current"
+    type="button"
+    aria-haspopup="listbox"
+    aria-expanded="false"
+    aria-label=""
+  >
+    🇬🇪
+  </button>
 
-    <a
-      class="lang-flag is-active"
-      href="/ka/"
-      hreflang="ka"
-    >
-      🇬🇪
-    </a>
-  
+  <!-- ენების სია -->
+  <ul class="lang-list" role="listbox">
+    
+      
+      <li role="option">
+        <a
+          href="/"
+          lang="en"
+          
+          aria-label="English"
+        >
+          🇺🇸
+        </a>
+      </li>
+    
+      
+      <li role="option">
+        <a
+          href="/ka/"
+          lang="ka"
+          aria-current="true"
+          aria-label="ᲥᲐᲠᲗᲣᲚᲘ"
+        >
+          🇬🇪
+        </a>
+      </li>
+    
+  </ul>
+
 </div>
 
 
 
   </div>
 </nav>
+
 
 
     <main id="main" class="main" role="main">
@@ -189,6 +212,7 @@
 
 
     </main>
+
     <footer class="site-footer" role="contentinfo">
   <div class="container footer-inner">
     <p class="footer-text">შექმნილია როგორც გრძელვადიანი, მრავალენოვანი სტატიკური საიტის შაბლონი.</p>
@@ -200,7 +224,13 @@
   </div>
 </footer>
 
-    <script src="/assets/js/main.js" defer></script>
+
+    <!-- =====================================================
+         JS Entry Point
+         - ES Module
+         - All components are imported from here
+         ===================================================== -->
+    <script type="module" src="/assets/js/main.js"></script>
   </body>
 </html>
 

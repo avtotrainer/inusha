@@ -1,0 +1,152 @@
+/* =========================================================
+   mobile.css
+   მობილურის სპეციფიკური ქცევები
+   - hamburger მენიუ
+   - mobile navigation overlay
+   - header / nav mobile layout
+   ========================================================= */
+
+/* ───────── Hamburger გამოჩენა ───────── */
+@media (max-width: 767px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+/* =========================================================
+   mobile.css
+   მობილურის სპეციფიკური ქცევები
+   - hamburger მენიუ
+   - mobile navigation overlay
+   - header / nav mobile layout
+   ========================================================= */
+
+/* ───────── Hamburger გამოჩენა ───────── */
+@media (max-width: 767px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+/* ───────── Mobile Navigation Overlay ───────── */
+@media (max-width: 767px) {
+  .site-nav {
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    gap: var(--space-2);
+
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: var(--space-4);
+
+    z-index: 1000;
+  }
+
+  .site-nav.is-open .menu {
+    display: flex;
+  }
+
+  .menu-link {
+    justify-content: center;
+    font-size: var(--fs-3);
+  }
+}
+
+/* ───────── Header / Nav — Mobile გამარტივება ───────── */
+@media (max-width: 767px) {
+  .header-inner,
+  .nav-inner {
+    flex-wrap: nowrap;
+  }
+
+  .brand-text {
+    display: none;
+  }
+}
+
+/* ───────── Language switcher — Mobile spacing ───────── */
+@media (max-width: 767px) {
+  .lang-switch {
+    margin-right: var(--space-3);
+  }
+}
+
+/* ───────── Language symbols size — Mobile ───────── */
+@media (max-width: 767px) {
+  .lang-current,
+  .lang-list a {
+    font-size: 1.5em;
+    line-height: 1;
+  }
+}
+
+/* ───────── Touch ergonomics ───────── */
+@media (max-width: 767px) {
+  .menu-link,
+  .hamburger {
+    min-height: 40px;
+    touch-action: manipulation;
+  }
+}
+
+/* ───────── Mobile Navigation Overlay ───────── */
+@media (max-width: 767px) {
+  .site-nav {
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    gap: var(--space-2);
+
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: var(--space-4);
+
+    z-index: 1000;
+  }
+
+  .site-nav.is-open .menu {
+    display: flex;
+  }
+
+  .menu-link {
+    justify-content: center;
+    font-size: var(--fs-3);
+  }
+}
+
+/* ───────── Header / Nav — Mobile გამარტივება ───────── */
+@media (max-width: 767px) {
+  .header-inner,
+  .nav-inner {
+    flex-wrap: nowrap;
+  }
+
+  .brand-text {
+    display: none;
+  }
+}
+
+/* ───────── Touch ergonomics ───────── */
+@media (max-width: 767px) {
+  .menu-link,
+  .hamburger {
+    min-height: 40px;
+    touch-action: manipulation;
+  }
+}

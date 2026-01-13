@@ -1,0 +1,26 @@
+/* =========================================================
+   sections.css
+   სექციების საერთო სტილი
+   ========================================================= */
+
+.section {
+  padding: var(--space-5) 0;
+}
+
+.section-head {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.section-title {
+  font-family: "Noto Serif Georgian", Georgia, "Times New Roman", serif;
+  margin: 0;
+  font-size: var(--fs-4);
+}
+
+.section-lead {
+  margin: 0;
+  color: var(--muted);
+  max-width: 70ch;
+}

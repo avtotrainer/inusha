@@ -1,30 +1,21 @@
-/**
- * main.js
- *
- * Minimal JavaScript scaffold.
- * Purpose:
- * - reserve a stable entry point for future JS
- * - avoid inline scripts in HTML
- * - keep JS responsibility explicit and isolated
- *
- * No runtime logic is intentionally added here.
- */
+/* =========================================================
+   main.js
+   JS bootstrap — აქედან იწყება ყველაფერი
+   ========================================================= */
 
-(function () {
-  "use strict";
+import { initNavigation } from "./components/navigation.js";
+import { initLangSwitcher } from "./components/lang-switch.js";
 
-  // DOM ready guard
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
+function ready(fn) {
+  if (document.readyState !== "loading") {
+    fn();
   } else {
-    init();
+    document.addEventListener("DOMContentLoaded", fn);
   }
+}
 
-  function init() {
-    // Placeholder for future enhancements:
-    // - language switcher
-    // - mobile menu
-    // - accessibility helpers
-    // - progressive enhancement
-  }
-})();
+ready(function () {
+  document.querySelectorAll(".site-nav").forEach(initNavigation);
+
+  document.querySelectorAll(".lang-switch").forEach(initLangSwitcher);
+});

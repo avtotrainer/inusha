@@ -1,0 +1,73 @@
+/* =========================================================
+   lang-switch.css
+   Language switcher — base + mobile
+   ========================================================= */
+
+.lang-switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ───────── Active language button (mobile toggle) ───────── */
+
+.lang-current {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.lang-current img,
+.lang-list img {
+  width: 28px;
+  height: auto;
+  display: block;
+}
+
+/* ───────── Language list (base) ───────── */
+
+.lang-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* ───────── Mobile behavior ───────── */
+@media (max-width: 767px) {
+  .lang-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--space-2);
+    margin-top: var(--space-2);
+
+    z-index: 1000;
+  }
+
+  .lang-switch.is-open .lang-list {
+    display: flex;
+  }
+}
+
+/* ───────── Desktop behavior ───────── */
+@media (min-width: 768px) {
+  .lang-current {
+    display: none;
+  }
+
+  .lang-list {
+    display: flex;
+    position: static;
+    flex-direction: row;
+  }
+}

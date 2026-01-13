@@ -1,0 +1,41 @@
+/* =========================================================
+   variables.css
+   CSS ცვლადები: ფერები, ზომები, spacing, typography
+   ========================================================= */
+
+:root {
+  /* Mountain Day Palette */
+  --bg: #eaf2f8;
+  --surface: #ffffff;
+  --surface-soft: #f4f7f6;
+
+  --text: #1f2a33;
+  --muted: #5f6f7a;
+
+  --accent: #3a7ca5;
+  --accent-soft: #6fb1c8;
+
+  --green: #6fa44a;
+  --green-soft: #9ccf7a;
+
+  --border: rgba(31, 42, 51, 0.12);
+  --shadow: 0 10px 30px rgba(31, 42, 51, 0.18);
+
+  --container: 1120px;
+  --radius: 18px;
+
+  --space-1: 6px;
+  --space-2: 10px;
+  --space-3: 14px;
+  --space-4: 22px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --fs-1: 13px;
+  --fs-2: 15px;
+  --fs-3: 18px;
+  --fs-4: 26px;
+  --fs-5: 40px;
+
+  --line: 1.6;
+}

@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="en">
   
-  
-
-  
 
   
   
@@ -13,31 +10,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home</title>
-    <meta name="description" content="Welcome page of the multilingual Jekyll template.">
+    <title>HOME</title>
+    <meta name="description" content="Main page of the multilingual Jekyll template.">
 
-    <!-- Main CSS -->
+    <!-- Main CSS (assets only use relative_url) -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!-- Favicon (optional but recommended) -->
     <link rel="icon" href="/favicon.ico">
   </head>
 
   <body>
     <header class="site-header" role="banner">
   <div class="container header-inner">
+    <!-- BRAND -->
     <div class="brand">
-      <a href="/">
+      <!-- ლოგო ყოველთვის root-იდან -->
+      <a href="/" class="brand-link">
         <img
           src="/assets/images/logo/inusha-logo.png"
           alt="Inusha logo"
           class="site-logo"
+          loading="eager"
         />
       </a>
 
+      <!-- ტექსტი — ენის მიხედვით -->
       <div class="brand-text">
         <span class="brand-title">INUSHA</span>
-        <span class="brand-subtitle">Long-term, clean, multilingual Jekyll template</span>
+        <span class="brand-subtitle">Discover Georgian Mountains</span>
       </div>
     </div>
   </div>
@@ -47,7 +47,6 @@
   <div class="container nav-inner">
 
     
-
 <ul class="menu" id="mobile-menu" role="list">
   
     <li class="menu-item">
@@ -55,7 +54,7 @@
         class="menu-link is-active"
         href="/"
       >
-        Home
+        HOME
       </a>
     </li>
   
@@ -64,7 +63,7 @@
         class="menu-link"
         href="/service/"
       >
-        Service
+        SERVICE
       </a>
     </li>
   
@@ -73,7 +72,7 @@
         class="menu-link"
         href="/about/"
       >
-        About
+        ABOUT US
       </a>
     </li>
   
@@ -82,7 +81,7 @@
         class="menu-link"
         href="/contact/"
       >
-        Contact
+        CONTACT
       </a>
     </li>
   
@@ -103,7 +102,7 @@
 
     <div class="lang-switch" aria-label="Language selector">
 
-  <!-- აქტიური ენა (mobile toggle) -->
+  <!-- CURRENT LANGUAGE BUTTON -->
   <button
     class="lang-current"
     type="button"
@@ -114,22 +113,19 @@
     🇺🇸
   </button>
 
-  <!-- ენების სია -->
   <ul class="lang-list" role="listbox">
     
-      
       <li role="option">
         <a
           href="/"
           lang="en"
           aria-current="true"
-          aria-label="English"
+          aria-label="ENGLISH"
         >
           🇺🇸
         </a>
       </li>
     
-      
       <li role="option">
         <a
           href="/ka/"
@@ -153,44 +149,116 @@
 
 
     <main id="main" class="main" role="main">
-      <section class="section hero" aria-labelledby="hero-title">
+      
+<section class="section hero" aria-labelledby="hero-title">
   <div class="container hero-inner">
+
     <div class="hero-copy">
-      <h1 id="hero-title" class="hero-title"></h1>
-      <p class="hero-lead"></p>
+      <h1 id="hero-title" class="hero-title">
+        Discover Georgia — Mountains, Culture, and Adventure
+      </h1>
+
+      
+        <p class="hero-lead">Our company was founded to introduce the world to the beauty and diversity of Georgia.
+</p>
+      
+
+      
+        <p class="hero-desc">Since 2013, we have been creating authentic and unforgettable journeys across Svaneti and throughout the country.
+</p>
+      
+
       <div class="hero-actions">
-        <a class="btn" href="/service/"></a>
-        <a class="btn btn-ghost" href="/contact/"></a>
+        
+          <a class="btn" href="service/">
+            Plan Your Tour
+          </a>
+        
+
+        
+          <a class="btn btn-ghost" href="contact/">
+            Contact Us
+          </a>
+        
       </div>
     </div>
+
     <div class="hero-media" aria-hidden="true"></div>
+
   </div>
 </section>
 
 <section class="section" aria-labelledby="service-title">
   <div class="container">
     <header class="section-head">
-      <h2 id="service-title" class="section-title"></h2>
-      <p class="section-lead"></p>
+      <h2 id="service-title" class="section-title">What We Offer</h2>
+
+      
+        <p class="section-lead">Tours and experiences in Georgia’s most impressive regions.</p>
+      
     </header>
 
-    <div class="cards">
-      
-    </div>
+    
+      <div class="cards">
+        
+          <article class="card">
+            <h3 class="card-title">Hiking and Adventure Tours</h3>
+            <p class="card-text">Mountain and nature routes with various difficulty levels.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">Horseback Riding Routes</h3>
+            <p class="card-text">Traditional tours in natural and remote environments.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">Off-road and Vehicle Tours</h3>
+            <p class="card-text">Hard-to-reach locations via special routes.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">Cultural Journeys</h3>
+            <p class="card-text">History, traditions, and local lifestyle.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">Extreme Mountaineering</h3>
+            <p class="card-text">Alpine expeditions for experienced adventurers.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">Canyoning near Ushba</h3>
+            <p class="card-text">Unique routes around waterfalls and canyons.</p>
+          </article>
+        
+      </div>
+    
   </div>
 </section>
 
 <section class="section" aria-labelledby="about-title">
   <div class="container">
     <header class="section-head">
-      <h2 id="about-title" class="section-title">
-        
-      </h2>
-      <p class="section-lead"></p>
+      <h2 id="about-title" class="section-title">Who We Are</h2>
+
+      
+      <p class="section-lead">Professionalism, safety, and real adventure.</p>
+      
     </header>
 
     <div class="prose">
-      <p></p>
+      
+      <p>We are a professional travel company combining experience, safety, and true adventure. Our approach goes beyond classic routes and creates unique experiences.
+</p>
+      
+
+      
+      <p class="about-more">
+        <a href="#">
+          More About Us
+        </a>
+      </p>
+      
     </div>
   </div>
 </section>
@@ -198,15 +266,28 @@
 <section class="section" aria-labelledby="contact-title">
   <div class="container">
     <header class="section-head">
-      <h2 id="contact-title" class="section-title">
-        
-      </h2>
-      <p class="section-lead"></p>
+      <h2 id="contact-title" class="section-title">CONTACT</h2>
+
+      
+        <p class="section-lead">Ready for a real adventure?</p>
+      
     </header>
 
-    <dl class="kv">
-      
-    </dl>
+    
+      <dl class="kv">
+        
+          <div class="kv-row">
+            <dt class="kv-k">Email</dt>
+            <dd class="kv-v">info@example.com</dd>
+          </div>
+        
+          <div class="kv-row">
+            <dt class="kv-k">Phone</dt>
+            <dd class="kv-v">+995 000 00 00 00</dd>
+          </div>
+        
+      </dl>
+    
   </div>
 </section>
 
@@ -215,7 +296,7 @@
 
     <footer class="site-footer" role="contentinfo">
   <div class="container footer-inner">
-    <p class="footer-text">Built as a long-term, multilingual static site template.</p>
+    <p class="footer-text">Created as a long-term, multilingual static site template.</p>
     <p class="footer-meta">
       <span>All rights reserved.</span>
       <span class="sep">•</span>
@@ -225,11 +306,7 @@
 </footer>
 
 
-    <!-- =====================================================
-         JS Entry Point
-         - ES Module
-         - All components are imported from here
-         ===================================================== -->
+    <!-- JS entry point -->
     <script type="module" src="/assets/js/main.js"></script>
   </body>
 </html>

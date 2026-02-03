@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="ka">
   
-  
-
-  
 
   
   
@@ -16,28 +13,31 @@
     <title>ᲡᲔᲠᲕᲘᲡᲘ</title>
     <meta name="description" content="რას ვაკეთებთ და როგორ ვმუშაობთ.">
 
-    <!-- Main CSS -->
+    <!-- Main CSS (assets only use relative_url) -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!-- Favicon (optional but recommended) -->
     <link rel="icon" href="/favicon.ico">
   </head>
 
   <body>
     <header class="site-header" role="banner">
   <div class="container header-inner">
+    <!-- BRAND -->
     <div class="brand">
-      <a href="/">
+      <!-- ლოგო ყოველთვის root-იდან -->
+      <a href="/" class="brand-link">
         <img
           src="/assets/images/logo/inusha-logo.png"
           alt="Inusha logo"
           class="site-logo"
+          loading="eager"
         />
       </a>
 
+      <!-- ტექსტი — ენის მიხედვით -->
       <div class="brand-text">
-        <span class="brand-title">INUSHA</span>
-        <span class="brand-subtitle">გრძელვადიანი, სუფთა, მრავალენოვანი Jekyll შაბლონი</span>
+        <span class="brand-title">ᲘᲜᲣᲨᲐ</span>
+        <span class="brand-subtitle">ᲐᲦᲛᲝᲐᲩᲘᲜᲔ ᲡᲐᲥᲐᲠᲗᲕᲔᲚᲝᲡ ᲛᲗᲘᲐᲜᲔᲗᲘ</span>
       </div>
     </div>
   </div>
@@ -47,7 +47,6 @@
   <div class="container nav-inner">
 
     
-
 <ul class="menu" id="mobile-menu" role="list">
   
     <li class="menu-item">
@@ -103,7 +102,7 @@
 
     <div class="lang-switch" aria-label="Language selector">
 
-  <!-- აქტიური ენა (mobile toggle) -->
+  <!-- CURRENT LANGUAGE BUTTON -->
   <button
     class="lang-current"
     type="button"
@@ -114,25 +113,22 @@
     🇬🇪
   </button>
 
-  <!-- ენების სია -->
   <ul class="lang-list" role="listbox">
     
-      
       <li role="option">
         <a
-          href="/"
+          href="/service/"
           lang="en"
           
-          aria-label="English"
+          aria-label="ENGLISH"
         >
           🇺🇸
         </a>
       </li>
     
-      
       <li role="option">
         <a
-          href="/ka/"
+          href="/ka/service/"
           lang="ka"
           aria-current="true"
           aria-label="ᲥᲐᲠᲗᲣᲚᲘ"
@@ -153,16 +149,52 @@
 
 
     <main id="main" class="main" role="main">
-      <section class="section" aria-labelledby="service-title">
+      
+<section class="section" aria-labelledby="service-title">
   <div class="container">
     <header class="section-head">
-      <h2 id="service-title" class="section-title"></h2>
-      <p class="section-lead"></p>
+      <h2 id="service-title" class="section-title">ᲠᲐᲡ ᲒᲗᲐᲕᲐᲖᲝᲑᲗ</h2>
+
+      
+        <p class="section-lead">ტურები და გამოცდილებები საქართველოს ყველაზე შთამბეჭდავ კუთხეებში.</p>
+      
     </header>
 
-    <div class="cards">
-      
-    </div>
+    
+      <div class="cards">
+        
+          <article class="card">
+            <h3 class="card-title">ᲡᲐᲤᲔᲮᲛᲐᲕᲚᲝ ᲓᲐ ᲡᲐᲗᲐᲕᲒᲐᲓᲐᲡᲐᲕᲚᲝ ᲢᲣᲠᲔᲑᲘ</h3>
+            <p class="card-text">მთის და ბუნების მარშრუტები სხვადასხვა სირთულის დონით.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">ᲡᲐᲪᲮᲔᲜᲝᲡᲜᲝ ᲛᲐᲠᲨᲠᲣᲢᲔᲑᲘ</h3>
+            <p class="card-text">ტრადიციული და ბუნებრივ გარემოში დაგეგმილი ტურები.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">ᲝᲤᲠᲝᲣᲓ ᲓᲐ ᲡᲐᲛᲐᲜᲥᲐᲜᲝ ᲢᲣᲠᲔᲑᲘ</h3>
+            <p class="card-text">მიუწვდომელი ლოკაციები სპეციალური მარშრუტებით.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">ᲙᲣᲚᲢᲣᲠᲣᲚᲘ ᲛᲝᲒᲖᲐᲣᲠᲝᲑᲔᲑᲘ</h3>
+            <p class="card-text">ისტორია, ტრადიციები და ადგილობრივი ცხოვრება.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">ᲔᲥᲡᲢᲠᲔᲛᲐᲚᲣᲠᲘ ᲐᲚᲞᲘᲜᲘᲖᲛᲘ</h3>
+            <p class="card-text">ალპინისტური მსვლელობები გამოცდილებისთვის.</p>
+          </article>
+        
+          <article class="card">
+            <h3 class="card-title">ᲙᲐᲜᲘᲝᲜᲘᲜᲒᲘ ᲣᲨᲑᲐᲡᲗᲐᲜ</h3>
+            <p class="card-text">უნიკალური მარშრუტები ჩანჩქერებთან.</p>
+          </article>
+        
+      </div>
+    
   </div>
 </section>
 
@@ -171,9 +203,9 @@
 
     <footer class="site-footer" role="contentinfo">
   <div class="container footer-inner">
-    <p class="footer-text">შექმნილია როგორც გრძელვადიანი, მრავალენოვანი სტატიკური საიტის შაბლონი.</p>
+    <p class="footer-text">ᲨᲔᲥᲛᲜᲘᲚᲘᲐ ᲠᲝᲒᲝᲠᲪ ᲒᲠᲫᲔᲚᲕᲐᲓᲘᲐᲜᲘ, ᲛᲠᲐᲕᲐᲚᲔᲜᲝᲕᲐᲜᲘ ᲡᲢᲐᲢᲘᲙᲣᲠᲘ ᲡᲐᲘᲢᲘᲡ ᲨᲐᲑᲚᲝᲜᲘ.</p>
     <p class="footer-meta">
-      <span>ყველა უფლება დაცულია.</span>
+      <span>ᲧᲕᲔᲚᲐ ᲣᲤᲚᲔᲑᲐ ᲓᲐᲪᲣᲚᲘᲐ.</span>
       <span class="sep">•</span>
       <span>&copy; 2026</span>
     </p>
@@ -181,11 +213,7 @@
 </footer>
 
 
-    <!-- =====================================================
-         JS Entry Point
-         - ES Module
-         - All components are imported from here
-         ===================================================== -->
+    <!-- JS entry point -->
     <script type="module" src="/assets/js/main.js"></script>
   </body>
 </html>

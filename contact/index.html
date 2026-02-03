@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="en">
   
-  
-
-  
 
   
   
@@ -13,31 +10,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact</title>
-    <meta name="description" content="How to reach us.">
+    <title>CONTACT</title>
+    <meta name="description" content="How to get in touch with us.">
 
-    <!-- Main CSS -->
+    <!-- Main CSS (assets only use relative_url) -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!-- Favicon (optional but recommended) -->
     <link rel="icon" href="/favicon.ico">
   </head>
 
   <body>
     <header class="site-header" role="banner">
   <div class="container header-inner">
+    <!-- BRAND -->
     <div class="brand">
-      <a href="/">
+      <!-- ლოგო ყოველთვის root-იდან -->
+      <a href="/" class="brand-link">
         <img
           src="/assets/images/logo/inusha-logo.png"
           alt="Inusha logo"
           class="site-logo"
+          loading="eager"
         />
       </a>
 
+      <!-- ტექსტი — ენის მიხედვით -->
       <div class="brand-text">
         <span class="brand-title">INUSHA</span>
-        <span class="brand-subtitle">Long-term, clean, multilingual Jekyll template</span>
+        <span class="brand-subtitle">Discover Georgian Mountains</span>
       </div>
     </div>
   </div>
@@ -47,7 +47,6 @@
   <div class="container nav-inner">
 
     
-
 <ul class="menu" id="mobile-menu" role="list">
   
     <li class="menu-item">
@@ -55,7 +54,7 @@
         class="menu-link"
         href="/"
       >
-        Home
+        HOME
       </a>
     </li>
   
@@ -64,7 +63,7 @@
         class="menu-link"
         href="/service/"
       >
-        Service
+        SERVICE
       </a>
     </li>
   
@@ -73,7 +72,7 @@
         class="menu-link"
         href="/about/"
       >
-        About
+        ABOUT US
       </a>
     </li>
   
@@ -82,7 +81,7 @@
         class="menu-link is-active"
         href="/contact/"
       >
-        Contact
+        CONTACT
       </a>
     </li>
   
@@ -103,7 +102,7 @@
 
     <div class="lang-switch" aria-label="Language selector">
 
-  <!-- აქტიური ენა (mobile toggle) -->
+  <!-- CURRENT LANGUAGE BUTTON -->
   <button
     class="lang-current"
     type="button"
@@ -114,25 +113,22 @@
     🇺🇸
   </button>
 
-  <!-- ენების სია -->
   <ul class="lang-list" role="listbox">
     
-      
       <li role="option">
         <a
-          href="/"
+          href="/contact/"
           lang="en"
           aria-current="true"
-          aria-label="English"
+          aria-label="ENGLISH"
         >
           🇺🇸
         </a>
       </li>
     
-      
       <li role="option">
         <a
-          href="/ka/"
+          href="/ka/contact/"
           lang="ka"
           
           aria-label="ᲥᲐᲠᲗᲣᲚᲘ"
@@ -153,18 +149,32 @@
 
 
     <main id="main" class="main" role="main">
-      <section class="section" aria-labelledby="contact-title">
+      
+<section class="section" aria-labelledby="contact-title">
   <div class="container">
     <header class="section-head">
-      <h2 id="contact-title" class="section-title">
-        
-      </h2>
-      <p class="section-lead"></p>
+      <h2 id="contact-title" class="section-title">CONTACT</h2>
+
+      
+        <p class="section-lead">Ready for a real adventure?</p>
+      
     </header>
 
-    <dl class="kv">
-      
-    </dl>
+    
+      <dl class="kv">
+        
+          <div class="kv-row">
+            <dt class="kv-k">Email</dt>
+            <dd class="kv-v">info@example.com</dd>
+          </div>
+        
+          <div class="kv-row">
+            <dt class="kv-k">Phone</dt>
+            <dd class="kv-v">+995 000 00 00 00</dd>
+          </div>
+        
+      </dl>
+    
   </div>
 </section>
 
@@ -173,7 +183,7 @@
 
     <footer class="site-footer" role="contentinfo">
   <div class="container footer-inner">
-    <p class="footer-text">Built as a long-term, multilingual static site template.</p>
+    <p class="footer-text">Created as a long-term, multilingual static site template.</p>
     <p class="footer-meta">
       <span>All rights reserved.</span>
       <span class="sep">•</span>
@@ -183,11 +193,7 @@
 </footer>
 
 
-    <!-- =====================================================
-         JS Entry Point
-         - ES Module
-         - All components are imported from here
-         ===================================================== -->
+    <!-- JS entry point -->
     <script type="module" src="/assets/js/main.js"></script>
   </body>
 </html>
